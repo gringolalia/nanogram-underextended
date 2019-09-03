@@ -1,5 +1,9 @@
 require('dotenv').config()
 module.exports = {
+	mode: 'spa',
+	generate: {
+		dir: 'docs'
+	},
   /*
   ** Headers of the page
   */
@@ -23,11 +27,11 @@ module.exports = {
       // 'bootstrap-vue/nuxt',
       { src: '~plugins/vee-validate.js' }
       // ['vee-validate', {
-      //   lang: 'en', 
+      //   lang: 'en',
       // }]
     ]
   },
-  
+
   /*
   ** Customize the progress bar color
   */
